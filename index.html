@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matriks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧮 Kalkulator Matriks</h1>
+            <div class="student-info">
+                <p><strong>Nama:</strong> Muhammad Chaesyah Raffy</p>
+                <p><strong>NIM:</strong> 411241028</p>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="matrix-section">
+                <h3>📊 Matriks A</h3>
+                <div class="size-controls">
+                    <label>Baris:</label>
+                    <input type="number" id="rowsA" value="3" min="1" max="5">
+                    <label>Kolom:</label>
+                    <input type="number" id="colsA" value="3" min="1" max="5">
+                </div>
+                <div id="matrixA" class="matrix-grid"></div>
+                <button class="clear-btn" onclick="clearMatrix('A')">🗑️ Bersihkan A</button>
+            </div>
+
+            <div class="matrix-section">
+                <h3>📊 Matriks B</h3>
+                <div class="size-controls">
+                    <label>Baris:</label>
+                    <input type="number" id="rowsB" value="3" min="1" max="5">
+                    <label>Kolom:</label>
+                    <input type="number" id="colsB" value="3" min="1" max="5">
+                </div>
+                <div id="matrixB" class="matrix-grid"></div>
+                <button class="clear-btn" onclick="clearMatrix('B')">🗑️ Bersihkan B</button>
+            </div>
+        </div>
+
+        <div class="operations">
+            <h3>🔧 Operasi Matriks</h3>
+            <div class="btn-group">
+                <button class="btn btn-primary" onclick="addMatrices()">➕ Penjumlahan</button>
+                <button class="btn btn-primary" onclick="subtractMatrices()">➖ Pengurangan</button>
+                <button class="btn btn-secondary" onclick="multiplyMatrices()">✖️ Perkalian</button>
+                <button class="btn btn-secondary" onclick="transposeMatrix('A')">🔄 Transpose A</button>
+                <button class="btn btn-secondary" onclick="transposeMatrix('B')">🔄 Transpose B</button>
+                <button class="btn btn-accent" onclick="determinant('A')">🎯 Determinan A</button>
+                <button class="btn btn-accent" onclick="determinant('B')">🎯 Determinan B</button>
+                <button class="btn btn-accent" onclick="inverse('A')">🔀 Invers A</button>
+                <button class="btn btn-accent" onclick="inverse('B')">🔀 Invers B</button>
+            </div>
+        </div>
+
+        <div class="result-section">
+            <h3>📋 Hasil Operasi</h3>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

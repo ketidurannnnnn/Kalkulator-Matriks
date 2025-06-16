@@ -1,0 +1,307 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Container Utama */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3);
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.student-info {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+/* Matrix Section Styling */
+.matrix-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.matrix-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border-color: #4facfe;
+}
+
+.matrix-section h3 {
+    color: #4facfe;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+    border-bottom: 2px solid #4facfe;
+    padding-bottom: 10px;
+}
+
+/* Size Controls */
+.size-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.size-controls label {
+    font-weight: 600;
+    color: #555;
+}
+
+.size-controls input {
+    width: 60px;
+    padding: 8px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.size-controls input:focus {
+    outline: none;
+    border-color: #4facfe;
+    box-shadow: 0 0 10px rgba(79, 172, 254, 0.2);
+}
+
+/* Matrix Grid */
+.matrix-grid {
+    display: grid;
+    gap: 5px;
+    margin: 15px 0;
+    justify-content: center;
+}
+
+.matrix-input {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.matrix-input:focus {
+    outline: none;
+    border-color: #4facfe;
+    background: white;
+    box-shadow: 0 0 10px rgba(79, 172, 254, 0.2);
+    transform: scale(1.05);
+}
+
+/* Operations Section */
+.operations {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.operations h3 {
+    color: #4facfe;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Button Styling */
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    min-width: 120px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #4facfe, #00f2fe);
+    color: white;
+    box-shadow: 0 5px 15px rgba(79, 172, 254, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(79, 172, 254, 0.4);
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.btn-accent {
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+}
+
+.btn-accent:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}
+
+/* Result Section */
+.result-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e0e0e0;
+    margin-top: 30px;
+}
+
+.result-section h3 {
+    color: #4facfe;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    border-bottom: 2px solid #4facfe;
+    padding-bottom: 10px;
+}
+
+.result-matrix {
+    display: grid;
+    gap: 8px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.result-cell {
+    width: 70px;
+    height: 50px;
+    border: 2px solid #4facfe;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+    color: #333;
+    font-size: 14px;
+}
+
+.scalar-result {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #4facfe;
+    padding: 20px;
+    background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+    border-radius: 15px;
+    border: 2px solid #4facfe;
+}
+
+/* Error Styling */
+.error {
+    background: #ffebee;
+    color: #c62828;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #c62828;
+    margin: 10px 0;
+}
+
+/* Clear Button */
+.clear-btn {
+    background: linear-gradient(45deg, #ff4757, #ff3838);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.clear-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 71, 87, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
